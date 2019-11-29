@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        
+        document.write("<br>");
+
+    }
+    function escreva(conteudo){
+        
+        document.write(conteudo);
+        pulaLinha();
+    }
+    var novaGeracao = 28;
+    var primeiraGeracao = 1500;
+    var utimaGeracao = 2019;
+    var calculoGeracao = (utimaGeracao - primeiraGeracao)/novaGeracao;
+
+    escreva("Já se passaram " + Math.round(calculoGeracao) + " gerações");
+</script>
