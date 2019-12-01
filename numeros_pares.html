@@ -1,0 +1,34 @@
+<meta charset="UTF-8">	
+
+<script>	
+    function pulaLinha(){	
+        	
+        document.write("<br><br>");	
+    	
+    }	
+    	
+    function escreva(frase){	
+        	
+        document.write(frase);	
+        pulaLinha();	
+    }
+    
+    var limite = 100;
+
+    var numero = 1;
+    
+    while(numero <= limite){
+        
+        numero = numero + 1;
+        
+        if(numero%2 == 0 ){
+            
+            escreva("O numero: " + numero + " é par!");
+        }
+        
+    }
+
+    escreva("FIM");
+    
+
+</script>
