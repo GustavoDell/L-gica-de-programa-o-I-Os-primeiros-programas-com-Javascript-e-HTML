@@ -1,0 +1,31 @@
+<meta charset="UTF-8">	
+
+<script>	
+    function pulaLinha(){	
+        	
+        document.write("<br><br>");	
+    	
+    }	
+    	
+    function escreva(frase){	
+        	
+        document.write(frase);	
+        pulaLinha();	
+    }
+    
+    var limite = 20;
+
+    var numero = 0;
+    
+    while(limite >= numero){
+        
+        escreva("Decrementando: " + limite);
+        
+        limite = limite - 1;
+       
+    }
+
+    escreva("FIM");
+    
+
+</script>
