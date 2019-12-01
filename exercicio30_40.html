@@ -1,0 +1,33 @@
+<meta charset="UTF-8">	
+
+<script>	
+    function pulaLinha(){	
+        	
+        document.write("<br><br>");	
+    	
+    }	
+    	
+    function escreva(frase){	
+        	
+        document.write(frase);	
+        pulaLinha();	
+    }
+    
+    var limite = 40;
+
+    var numero = 30;
+    
+    while(numero <= limite){
+        
+        if(numero != 33 && numero != 37){
+            
+            escreva("O numero: " + numero);
+        }
+        
+        numero = numero + 1;
+    }
+
+    escreva("FIM");
+    
+
+</script>
