@@ -13,21 +13,34 @@
         pulaLinha();	
     }
     function sorteia(numero){
+        
         return Math.round(Math.random() * numero);
     }	
 
     var numeroPensado = sorteia(100);
     
-    var chute = parseInt(prompt("Digite seu chute!"));
+    tentativa = 0;
+    while(tentativa < 3){
+        
+        var chute = parseInt(prompt("Digite seu chute!"));
+    
+        if(chute == numeroPensado){
+            
+            escreva("Você acertou! " + numeroPensado);
 
-    if(chute == numeroPensado){
-        escreva("Você acertou! " + numeroPensado);
-    }else{
-        if(chute > numeroPensado){
-            escreva("O chute digitado: " + chute + " é maior que o numero pensado: " + numeroPensado)
-        }else if(chute < numeroPensado){
-            escreva("O chute digitado: " + chute + " é menor que o numero pensado: " + numeroPensado)
+            break;
+        
+        }else{
+            
+            if(chute > numeroPensado){
+                escreva("O chute digitado: " + chute + " é maior que o numero pensado: " + numeroPensado)
+            }else if(chute < numeroPensado){
+                escreva("O chute digitado: " + chute + " é menor que o numero pensado: " + numeroPensado)
+            }
+
         }
+        
+        tentativa++;
     }
     
 </script>
